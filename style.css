@@ -1,0 +1,14 @@
+#login_div{
+    text-align: center;
+}
+#Parts {
+    vertical-align: middle;
+    float:left;
+    margin: 0px;
+    
+}
+.Part {
+    vertical-align: middle;
+    float: right;
+    margin: 0px;
+}

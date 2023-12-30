@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+    body {
+        background-image: url("Backgroudn.jpg");
+    }
+</style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Rubik&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        
+        <script src="kwitter_room.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-light" style="background-color: white; position: sticky;">
+            <a href="https://code.byjusfutureschool.com/s/dashboard" ><img src="Brand_Logo.png" style="height: 50px; width: 50px;"></a>
+            <label style="font-family: Handjet; font-size: 30px; font-weight: bold;">LetsChat</label>
+            <div onclick="logout()" style="float: right;">
+            <button id="logout_1" style="border-radius: 20px; font-size: 20px;  border-width: 0px; left: 30px; z-index: 10; top: 1px; background-color: rgba(255, 255, 255, 0); padding: 0px;" class="glyphicon glyphicon-chevron-left img-circle"></button>
+            <button id="logout" style="border-radius: 20px; background: none; color: rgb(208, 34, 34); border-width: 0px; z-index: 9; font-size: 20px; font-family: pacifico; padding: 10px; padding-left: 30px;">Logout</button>
+            </div>
+        </nav>
+        <center>
+        <h2 id="user_name" style="font-family: Just another hand; color: white; font-weight: bold;" ></h2>
+        <h3 style="color: white; text-align: center; margin-top: 1px;">Create your own Student/Subject Room or Browse the existing, information-packed Rooms at your disposal.</h3>
+        <input id="room_name" class="form-control" placeholder="Enter Room Name" style=" width: 50%; margin-bottom: 1%;" type="text">
+        <button style="color: rgb(255, 255, 255); background-color: rgba(0, 255, 149, 0.524); width: 40%; left: 30%; border-radius: 30px;" class="btn" onclick="addRoom()">Create Room</button>
+        <h3 class="header" style="color: white; margin: 10px;">Browse Trending Rooms</h3>
+        <div id="output" style="background-color: rgba(255, 255, 255, 0.906); border-radius: 15px; width: 55%;"></div>
+        </center>
+    </body>
+</html>
+
+
+        
+    
